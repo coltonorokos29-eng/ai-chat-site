@@ -51,8 +51,12 @@ export default function Home() {
       <input
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="Type a message..."
-      />
+        on KeyDown={(e) => {
+          if (e.key === "enter") {
+            sendMessage();
+          }
+        }}
+       />
 
       <button onClick={sendMessage}>Send</button>
     </div>

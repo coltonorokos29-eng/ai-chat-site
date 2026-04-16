@@ -48,30 +48,15 @@ export default function Home() {
         ))}
       </div>
 
-      <textarea
+      <input
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={(e) => {
-          if (e.key === "Enter" && !e.shiftkey) {
-            e.preventDefault();
-            if (input.trim() !== "") {
+          if (e.key === "Enter") {
             sendMessage();
-          }
           }
         }}
         placeholder="type here or smth"
-        rows={1}
-        style={{
-          width: "100%",
-          resize: "none",
-          overflow: "hidden",
-        }}
-        ref={(el) => {
-          if (el) {
-            el.style.height = "auto";
-            el.style.height = el.scrollHeight + "px";
-          }
-        }}
        />
 
       <button onClick={sendMessage}>Send</button>

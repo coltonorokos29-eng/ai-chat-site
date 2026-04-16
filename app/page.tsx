@@ -56,6 +56,7 @@ export default function Home() {
             sendMessage();
           }
         }}
+        placeholder="type here or smth"
        />
 
       <button onClick={sendMessage}>Send</button>

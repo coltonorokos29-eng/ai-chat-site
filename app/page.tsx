@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>My AI Chat</h1>
+      <h1>Landon's A Femboy</h1>
 
       <div>
         {messages.map((m, i) => (

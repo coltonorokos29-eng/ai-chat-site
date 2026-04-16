@@ -52,7 +52,7 @@ export default function Home() {
         value={input}
         onChange={(e) => setInput(e.target.value)}
         on KeyDown={(e) => {
-          if (e.key === "enter") {
+          if (e.key === "Enter") {
             sendMessage();
           }
         }}
